@@ -15,7 +15,7 @@ public class RollercoasterTest {
     public void setUp() {
 
         rollerCoaster = new RollerCoaster("Blue Ridge", 10);
-        visitor = new Visitor(13,152.00,30.00);
+        visitor = new Visitor(13,201.00,30.00);
     }
 
     @Test
@@ -37,4 +37,9 @@ public class RollercoasterTest {
     public void canCheckAgeAndHeight() {
         assertEquals(true, rollerCoaster.isAllowedTo(visitor));
     }
-}
+
+    @Test
+    public void canGetTicketPrice() {
+        assertEquals( 16.80, rollerCoaster.priceForVisitor(visitor),0.1); }
+    }
+
