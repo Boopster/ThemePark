@@ -4,9 +4,9 @@ import people.Visitor;
 
 public class TobaccoStall extends Stall implements behaviours.ISecurity {
 
-    public TobaccoStall(String name, String ownerName, ParkingSpot parkingSpot) {
+    public TobaccoStall(String name, String ownerName, int rating, ParkingSpot parkingSpot) {
 
-        super(name, ownerName, parkingSpot);
+        super(name, ownerName, rating, parkingSpot);
     }
 
     public boolean isAllowedTo(Visitor visitor) {
